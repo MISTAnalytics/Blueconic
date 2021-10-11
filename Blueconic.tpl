@@ -14,6 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Blueconic",
+  "categories": ["ANALYTICS", "ADVERTISING", "TAG_MANAGEMENT"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
