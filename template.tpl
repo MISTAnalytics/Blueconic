@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -14,7 +14,6 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Blueconic",
-  "categories": ["ANALYTICS", "ADVERTISING", "TAG_MANAGEMENT"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -48,10 +47,11 @@ ___TEMPLATE_PARAMETERS___
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const log = require('logToConsole');
+const encodeUriComponent = require('encodeUriComponent');
 const injectScript = require('injectScript');
 
 const blueconicHost = data.blueconic_host;
-const trackingUrl = "https://cdn.blueconic.net/" + blueconicHost + ".js";
+const trackingUrl = "https://cdn.blueconic.net/" + encodeUriComponent(blueconicHost) + ".js";
 
 const onSuccess = () => {
   log('Blueconic loaded successfully.');
@@ -126,6 +126,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 11-10-2021 16:58:49
+Created on 19-10-2021 19:41:38
 
 
